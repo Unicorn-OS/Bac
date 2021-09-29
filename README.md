@@ -7,4 +7,9 @@ When drives don't show up:
 
 code: https://www.google.com/search?q=ubuntu+clone+physical+drive+to+qcow2
 
-`sudo lsblk --bytes`
+```
+sudo lsblk --bytes #Read this to set bytes
+
+bytes=256060514304
+qemu-img create -f qcow2 laptopN.qcow2 $bytes
+```
